@@ -11,7 +11,7 @@ from keras.datasets import mnist
 from keras.utils import np_utils
 import keras
 
-# In[3]:
+
 
 
 (x_train, y_train),(x_test,y_test) =mnist.load_data()
