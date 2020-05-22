@@ -39,7 +39,6 @@ x_train = x_train.astype('float32')
 x_test = x_test.astype('float32')
 
 
-# In[7]:
 
 
 
