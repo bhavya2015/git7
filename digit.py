@@ -128,9 +128,9 @@ print('Test accuracy:', scores[1])
 accuracy=scores[1]*100
 
 
-f=open('result.py','w')
-f.write(accuracy)
-f.close()
-
+if accuracy<80 :
+	exit(1)
+else:
+	exit(0)
 
 
