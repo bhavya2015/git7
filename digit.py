@@ -60,8 +60,6 @@ num_classes = y_test.shape[1]
 num_pixels = x_train.shape[1] * x_train.shape[2]
 
 
-# In[10]:
-
 
 model=Sequential()
 
