@@ -130,15 +130,12 @@ scores = model.evaluate(x_test, y_test, verbose=1)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
-
-# In[ ]:
-
-
-accuracy=scores[1]
+accuracy=scores[1]*100
 
 
-# In[ ]:
-
+f=open('result.py','w')
+f.write(accuracy)
+f.close()
 
 
 
