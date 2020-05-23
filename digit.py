@@ -116,15 +116,13 @@ history = model.fit(x_train, y_train,
           validation_data=(x_test, y_test),
           shuffle=True)
 
-model.save("digit_lenet.h5")
-
+#model.save("digit_lenet.h5")
 
 scores = model.evaluate(x_test, y_test, verbose=1)
 
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 accuracy=scores[1]*100
-
 
 file1=open("result.txt",'w')
 file.write(str(accuracy))
