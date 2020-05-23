@@ -85,14 +85,14 @@ def add_dense_layer(neurons):
 # In[13]:
 
 
-model_layers(model ,20,5,2 )
+model_layers(model ,10,5,2 )
 #model_layers(model ,layer1)
 #model_layers(model ,layer3)
 
 
 #fullyconnected
 model.add(Flatten())
-add_dense_layer(neurons=500)
+add_dense_layer(neurons=100)
 
 
 #softmax for classifivcation
@@ -109,7 +109,7 @@ print(model.summary())
 
 # Training Parameters
 batch_size = 128
-epochs = 10
+epochs = 1
 history = model.fit(x_train, y_train,
           batch_size=batch_size,
           epochs=epochs,
@@ -126,9 +126,6 @@ print('Test accuracy:', scores[1])
 accuracy=scores[1]*100
 
 
-if accuracy<80 :
-	exit(1)
-else:
-	exit(0)
-
-
+file1=open("result.txt",'w')
+file.write(str(accuracy))
+file1.close()
