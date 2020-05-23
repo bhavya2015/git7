@@ -87,8 +87,8 @@ def add_dense_layer(neurons):
 
 
 model_layers(model ,5,3,5 )
-#model_layers(model ,layer1)
-#model_layers(model ,layer3)
+#l2model_layers(model ,layer1)
+#l3model_layers(model ,layer3)
 
 
 #fullyconnected
