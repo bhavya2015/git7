@@ -86,14 +86,14 @@ def add_dense_layer(neurons):
 # In[13]:
 
 
-model_layers(model ,10,5,2 )
+model_layers(model ,5,5,2 )
 #model_layers(model ,layer1)
 #model_layers(model ,layer3)
 
 
 #fullyconnected
 model.add(Flatten())
-add_dense_layer(neurons=100)
+add_dense_layer(neurons=10)
 
 
 #softmax for classifivcation
@@ -125,6 +125,6 @@ print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 accuracy=scores[1]*100
 
-file=open("result.txt",'w')
+file=open('result.txt','w')
 file.write(str(accuracy))
 file.close()
