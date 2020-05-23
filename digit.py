@@ -86,14 +86,14 @@ def add_dense_layer(neurons):
 # In[13]:
 
 
-model_layers(model ,5,5,2 )
+model_layers(model ,5,3,5 )
 #model_layers(model ,layer1)
 #model_layers(model ,layer3)
 
 
 #fullyconnected
 model.add(Flatten())
-add_dense_layer(neurons=10)
+add_dense_layer(neurons=5)
 
 
 #softmax for classifivcation
@@ -109,7 +109,7 @@ print(model.summary())
 
 
 # Training Parameters
-batch_size = 128
+batch_size = 256
 epochs = 1
 history = model.fit(x_train, y_train,
           batch_size=batch_size,
