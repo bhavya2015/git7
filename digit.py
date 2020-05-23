@@ -125,6 +125,6 @@ print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 accuracy=scores[1]*100
 
-file1=open("result.txt",'w')
+file=open("result.txt",'w')
 file.write(str(accuracy))
-file1.close()
+file.close()
