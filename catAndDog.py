@@ -29,8 +29,6 @@ model.add(Flatten())
 add_dense_layer(128)
 #d2add_dense_layer(densel2)
 
-
-model.add(Flatten())
 model.add(Dense(units=1, activation='sigmoid'))
 
 model.summary()
