@@ -17,7 +17,6 @@ def add_dense_layer(neurons):
     model.add(Dense(neurons))
     model.add(Activation("relu"))
 
-
 model_layers(model ,32,3,2 )
 #l2model_layers(model ,layer2)
 #l3model_layers(model ,layer3)
