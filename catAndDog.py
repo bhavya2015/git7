@@ -61,9 +61,9 @@ model.fit(
 #model.save('cat_dog.h5')
 
 score = model.evaluate(test_set)
-print('Test loss:', scores[0])
-print('Test accuracy:', scores[1])
-accuracy=scores[1]*100
+print('Test loss:', score[0])
+print('Test accuracy:', score[1])
+accuracy=score[1]*100
 
 file=open('result.txt','w')
 file.write(str(accuracy))
