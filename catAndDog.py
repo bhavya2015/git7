@@ -8,7 +8,7 @@ from keras_preprocessing.image import ImageDataGenerator
 model = Sequential()
 
 def model_layers(model ,filter_qnt , size_filter , pool_size):
-    model.add(Conv2D(filter_qnt, (size_filter,size_filter) , padding='same', input_shape=(64, 64, 3)))
+    model.add(Convolution2D(filter_qnt, (size_filter,size_filter) , padding='same', input_shape=(64, 64, 3)))
     model.add(Activation("relu"))
     model.add(MaxPooling2D(pool_size=(pool_size,pool_size), strides=(2,2)))
     
