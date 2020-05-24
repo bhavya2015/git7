@@ -42,12 +42,12 @@ train_datagen = ImageDataGenerator(
         horizontal_flip=True)
 test_datagen = ImageDataGenerator(rescale=1./255)
 training_set = train_datagen.flow_from_directory(
-        '/task3/training_set',
+        'training_set',
         target_size=(64, 64),
         batch_size=32,
         class_mode='binary')
 test_set = test_datagen.flow_from_directory(
-        '/task3/test_set',
+        'test_set',
         target_size=(64, 64),
         batch_size=32,
         class_mode='binary')
