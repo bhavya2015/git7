@@ -23,7 +23,6 @@ model_layers(model ,32,3,2 )
 #l3model_layers(model ,layer3)
 #l4model_layers(model ,layer4)
 
-
 #fullyconnected
 model.add(Flatten())
 add_dense_layer(128)
