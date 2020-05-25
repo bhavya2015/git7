@@ -68,6 +68,3 @@ file=open('result.txt','w')
 file.write(str(accuracy))
 file.close()
 
-
-
-
